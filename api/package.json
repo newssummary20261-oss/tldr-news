@@ -1,0 +1,13 @@
+{
+  "name": "tldr-news-api",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "process": "node process-articles.js"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "@libsql/client": "^0.5.6",
+    "dotenv": "^17.2.3"
+  }
+}
