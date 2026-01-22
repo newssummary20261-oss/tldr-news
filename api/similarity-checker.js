@@ -13,7 +13,7 @@ const THRESHOLDS = {
   semantic: 0.70,
 };
 
-const MIN_AGE_HOURS = 48;
+const MIN_AGE_HOURS = 1;
 
 // Age check
 export function checkAge(publishedAt) {
