@@ -10,7 +10,7 @@ import { checkAge, runChecks } from './similarity-checker.js';
 const CONFIG = {
   // Gemini free tier: 15 requests/min, 1500/day
   // Stay well under limit
-  maxArticlesPerRun: 20,
+  maxArticlesPerRun: 100,
   
   categories: ['general','technology','business','science','health','sports','entertainment','world','politics','environment'],
   
@@ -28,7 +28,8 @@ async function main() {
   console.log('');
   console.log('🚀 TLDR News Processor (FREE Gemini Edition)');
   console.log(`   Max articles: ${CONFIG.maxArticlesPerRun}`);
-  console.log(`   Using: Gemini 2.0 Flash Lite (FREE)`);
+//   console.log(`   Using: Gemini 2.0 Flash Lite (FREE)`);
+  console.log('   Using: Groq Llama 3.3 (FREE)');
   console.log('');
   
   await initDatabase();
